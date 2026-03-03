@@ -1,11 +1,17 @@
-import java.sql.SQLOutput;
-
-public class UseCase1PalindromeCheckerApp {
+public class UseCase2PalindromeCheckerApp {
     public static void main(String[] args){
-        System.out.println("Palindrome checker management ");
-        System.out.println("Application name ");
-        System.out.println("welcome to the palindrome checker system");
-        System.out.println("System initialized successfully");
+        String word = "madam";
+        String reverse = "";
 
+        for(int i = word.length() - 1; i>=0 ;i--){
+            reverse = reverse + word.charAt(i);
+
+        }
+        if(word.equals(reverse)){
+            System.out.println(word+ "is a palindrome");
+        }
+        else{
+            System.out.println(word+ "is not a palindrome");
+        }
     }
 }
